@@ -1,0 +1,56 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Dataset (large; download via ml/scripts/download_data.py) ---
+ml/plant_diseases/
+new-plant-diseases-dataset.zip
+*.csv
+
+# --- Model checkpoints (large binaries — host on GitHub Releases) ---
+ml/checkpoints/
+*.pth
+*.pt
+
+# --- Kaggle credentials (never commit!) ---
+kaggle.json
+.kaggle/
+
+# --- SSIS / Visual Studio build artifacts ---
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# --- Power BI temp files ---
+*.pbix.tmp
+~$*
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- Gradio / Streamlit runtime ---
+flagged/
+gradio_cached_examples/
+.streamlit/secrets.toml
+
+# NOTE: etl/*.ispac, powerbi/*.pbix and docs/*.pdf ARE committed — they are
+# the deliverables for those components and small enough for Git.
